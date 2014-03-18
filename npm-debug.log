@@ -1,0 +1,64 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/local/bin/node',
+1 verbose cli   '/opt/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'sockets.io' ]
+2 info using npm@1.2.14
+3 info using node@v0.8.22
+4 verbose read json /Users/appacademy/Desktop/my_chat_app/package.json
+5 warn package.json my-chat-app@0.0.1 No README.md file found!
+6 verbose read json /Users/appacademy/Desktop/my_chat_app/node_modules/jshint/package.json
+7 verbose read json /Users/appacademy/Desktop/my_chat_app/node_modules/mime/package.json
+8 verbose read json /Users/appacademy/Desktop/my_chat_app/node_modules/node-static/package.json
+9 verbose read json /Users/appacademy/Desktop/my_chat_app/node_modules/socket.io/package.json
+10 verbose from cache /Users/appacademy/Desktop/my_chat_app/package.json
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'sockets.io', null ]
+13 verbose cache add name=undefined spec="sockets.io" args=["sockets.io",null]
+14 verbose parsed url { pathname: 'sockets.io',
+14 verbose parsed url   path: 'sockets.io',
+14 verbose parsed url   href: 'sockets.io' }
+15 silly lockFile 7d5df757-sockets-io sockets.io
+16 verbose lock sockets.io /Users/appacademy/.npm/7d5df757-sockets-io.lock
+17 silly lockFile 7d5df757-sockets-io sockets.io
+18 silly lockFile 7d5df757-sockets-io sockets.io
+19 verbose addNamed [ 'sockets.io', '' ]
+20 verbose addNamed [ null, '' ]
+21 silly lockFile c6506731-sockets-io sockets.io@
+22 verbose lock sockets.io@ /Users/appacademy/.npm/c6506731-sockets-io.lock
+23 silly addNameRange { name: 'sockets.io', range: '', hasData: false }
+24 verbose url raw sockets.io
+25 verbose url resolving [ 'https://registry.npmjs.org/', './sockets.io' ]
+26 verbose url resolved https://registry.npmjs.org/sockets.io
+27 info trying registry request attempt 1 at 13:31:30
+28 http GET https://registry.npmjs.org/sockets.io
+29 http 404 https://registry.npmjs.org/sockets.io
+30 silly registry.get cb [ 404,
+30 silly registry.get   { date: 'Tue, 18 Mar 2014 20:31:31 GMT',
+30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '52',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     age: '0',
+30 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-lax1427-LAX',
+30 silly registry.get     'x-cache': 'MISS, MISS',
+30 silly registry.get     'x-cache-hits': '0, 0',
+30 silly registry.get     'x-timer': 'S1395174690.977874994,VS0,VS-911,VE-809,VE166',
+30 silly registry.get     'keep-alive': 'timeout=10, max=50',
+30 silly registry.get     connection: 'Keep-Alive' } ]
+31 silly lockFile c6506731-sockets-io sockets.io@
+32 silly lockFile c6506731-sockets-io sockets.io@
+33 error 404 'sockets.io' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Darwin 12.2.1
+35 error command "/opt/local/bin/node" "/opt/local/bin/npm" "install" "sockets.io"
+36 error cwd /Users/appacademy/Desktop/my_chat_app
+37 error node -v v0.8.22
+38 error npm -v 1.2.14
+39 error code E404
+40 verbose exit [ 1, true ]

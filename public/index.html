@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/javascripts/chat.js"></script>
+    <script src="/javascripts/chat_ui.js"></script>
+  </head>
+  <body>
+    <h1>Our Chat App</h1>
+
+    <div id="display"></div>
+
+    <form>
+      <label>Message:
+        <input type="text" name="message[text]">
+      </label>
+
+      <button>Send</button>
+    </form>
+
+    <script>
+      $(function() {
+        var chatUi = new ChatApp.ChatUi();
+
+        $('form').on('submit', function (event) {
+          event.preventDefault();
+
+          var msg = $(event.currentTarget).find('input').val()
+
+          chatUi.getMessageFromInput(msg)
+        });
+      });
+    </script>
+  </body>
+</html>
