@@ -22,7 +22,7 @@
       case "/nick":
         this.changeUsername(argument)
         break;
-      case: "/room":
+      case "/room":
         this.changeRoom(argument)
         break;
     }
