@@ -6,11 +6,11 @@
     <script src="/javascripts/chat_ui.js"></script>
   </head>
   <body>
-    <h1>Our Chat App</h1>
+    <h1>Cohort Chatroom</h1>
 
     <div id="display"></div>
 
-    <form>
+    <form id="message">
       <label>Message:
         <input type="text" name="message[text]">
       </label>
@@ -18,16 +18,42 @@
       <button>Send</button>
     </form>
 
+    <form id="username">
+      <label>Username:
+        <input type="text" name="username[name]">
+      </label>
+
+      <button>Set Username</button>
+    </form>
+
+    <h3>Users Currently Logged In:</h3>
+    <div id="users">
+
+    </div>
+
     <script>
       $(function() {
         var chatUi = new ChatApp.ChatUi();
 
-        $('form').on('submit', function (event) {
+        $('form#message').on('submit', function (event) {
           event.preventDefault();
 
-          var msg = $(event.currentTarget).find('input').val()
+          var $input = $(event.currentTarget).find('input')
+          var msg = $input.val()
+          $input.val('')
 
           chatUi.getMessageFromInput(msg)
+
+        });
+
+        $('form#username').on('submit', function (event) {
+          event.preventDefault();
+
+          var $input = $(event.currentTarget).find('input')
+          var msg = $input.val()
+          $input.val('')
+
+          chatUi.setUsername(msg);
         });
       });
     </script>
